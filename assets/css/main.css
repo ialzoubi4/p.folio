@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --mainFont:"Roboto",sans-serif;
+    --mainColor:rgb(255,114,76);
+    --secondFont:"Raleway", sans-serif;
+    --thirdFont:"Dosis", sans-serif;
+}
+
+body{
+  font-family:  var(--mainFont);
+  height: 5000px;
+}
+.bg-mainColor{
+    background-color: var(--mainColor);
+}
+.header-content span,p{
+    font-family:var(--secondFont);
+   font-size: 23px;
+    font-weight: 500;
+    line-height: 27.6px;
+}
+.header-content h1{
+    font-family: var(--thirdFont);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+   
+    
+}
+.hov i{
+    color:black ;
+    background-color: white;
+    transition:transform 0.5s;
+}
+.hov:hover i{
+color:white;
+background-color: black;
+transform:rotate(360deg);
+}
+
+.nav-item .nav-link{
+    position:relative;
+}
+.nav-item .nav-link.active::after{
+content:'';
+position:absolute;
+background-color: var(--mainColor);
+height: 1px;
+width:80%;
+bottom:0;
+left: 8px;
+}
+.nav-item .nav-link::after{
+    content:'';
+    position:absolute;
+    background-color: var(--mainColor);
+    height: 1px;
+    width:0%;
+    bottom:0;
+    left: 8px;
+}
+.nav-item .nav-link:hover::after{
+    width:80%;
+    transform:width .5s;
+}
+.navbar {
+    transition: background-color 0.5s ease-in-out; /* Smooth transition */
+}
+
+.navbar.scrolled {
+    background-color: white !important; /* Change background on scroll */
+}
+/*start header section*/
+.header{
+    background-image: url('../img/public/man.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: -15px;
+    background-attachment: fixed;
+}
+.row{
+    display:flex;
+}
+.header .icons i{
+    border-radius: 50%;
+    border:1px solid;
+    width:30px;
+    height:30px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 30px; */
+    padding-left: 1px;
+    margin:5px;
+    transition:transform 0.5s;
+}
+.header .icons i:hover{
+    transform:rotate(360deg);
+}
+.header .icons i:nth-of-type(1){
+    color:rgb(59,89,153);
+    border-radius: rgb(59,89,153);
+    background-color: white;
+}
+.header .icons i:nth-of-type(1):hover{
+    color:white;
+    background-color: rgb(59,89,153);
+}
+
+.header .icons i:nth-of-type(2){
+    color:rgb(242,144,182);
+    border-radius: rgb(242,144,182);
+    background-color: white;
+}
+.header .icons i:nth-of-type(2):hover{
+    color:white;
+    background-color: rgb(242,144,182);
+}
+
+.header .icons i:nth-of-type(3){
+    color:rgb(27,111,255);
+    border-radius: rgb(27,111,255);
+    background-color: white;
+}
+.header .icons i:nth-of-type(3):hover{
+    color:white;
+    background-color: rgb(27,111,255);
+}
+
+.header .icons i:nth-of-type(4){
+    color:rgb(0,119,181);
+    border-radius: rgb(0,119,181);
+    background-color: white;
+}
+.header .icons i:nth-of-type(4):hover{
+    color:white;
+    background-color: rgb(0,119,181);
+}
+
+.header .icons i:nth-of-type(5){
+    color:rgb(225,77,57);
+    border-radius: rgb(225,77,57);
+    background-color: white;
+}
+.header .icons i:nth-of-type(5):hover{
+    color:white;
+    background-color: rgb(225,77,57);
+}
+.UI {
+    
+    white-space: nowrap;  
+    overflow: hidden;     
+    animation: typing 3.5s steps(30) 0.5s forwards infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 25%; 
+    }
+}
+/*end header section*/
+/*start about section*/
+.row .col-md-6 .count span {
+    font-family: var(--mainFont);
+         font-size: 26px;
+         font-weight: 700;
+       line-height:39px;
+}
+.numbers{
+    background-color: rgb(78,78,78);
+
+}
+ .count h2{
+    font-family: var(--thirdFont);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+}
+.row .ABOUT{
+    background-color: rgb(255,122,87);
+}
+.title h2{
+    position:relative;
+    font-family:var(--mainFont);
+    font-size: 15px;
+font-weight: 500;
+
+}
+.title p{
+    font-family:var(--mainFont);
+    font-size: 14px;
+font-weight: 400;
+
+}
+.title h3{
+    font-family:var(--mainFont);
+    font-size: 48px;
+font-weight: 700;
+
+}
+.title .button{
+    font-family:var(--secondFont);
+    font-size: 13px;
+font-weight: 600;
+}
+.title h2::after{
+    content:'';
+position:absolute;
+    bottom:0;
+    left: 2px;
+    width:10%;
+    height:1px;
+    background-color:white;
+    border:0px solid;
+}
+.bg--dark{
+    background-color: rgb(78,78,78);
+
+}
+.title span{
+   width:100px;
+   border-top-right-radius: 35px;
+    border-bottom-right-radius:35px;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.title i{
+   color: white;
+   background-color:rgb(78,78,78);
+   transition: color 0.3s ease-in-out;
+   
+}
+.title:hover i{
+    background-color:rgb(78,78,78);
+   color:rgb(255,122,87)!important;
+   transform:rotate(360deg);
+}
+/*end of about section*/
+
+/*start of service section*/
+.services span{
+    font-family: var(--mainColor);
+    font-size: 16px;
+font-weight: 400;
+}
+.services h1{
+    font-family: var(--thirdColor);
+    font-size: 48px;
+font-weight: 700;
+}
+.services .row1 .col-md-3 h2{
+    font-family: var(--mainColor);
+    font-size: 20px;
+font-weight: 500;
+}
+.services .row1 .col-md-3 p{
+    font-family: var(--mainColor);
+    font-size: 14px;
+font-weight: 400;
+}
+
+.services .title-content .titl  span::after{
+    content:'';
+position:absolute;
+    bottom:0;
+    left:2px;
+    width: 120%;;
+    height:1px;
+    background-color:var(--mainColor);
+    border:0px solid;
+}
+.services{
+    height: 450px;;
+}
+.services .title-content .titl span{
+    position:relative;
+}
+.services .row1 .col-md-3{
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+    height:0;
+   
+}
+.services .row1 .col-md-3:hover{
+    height: 100%;
+    transition:height 0.8s;
+    background-color:rgb(235,237,237) ;
+     
+}
+/*end of service section*/
+/*start of portfolio section*/
+
+.portfolio .title-content .titl span{
+    position:relative;
+}
+.portfolio .title-content .titl  span::after{
+    content:'';
+position:absolute;
+    bottom:0;
+    left:2px;
+    width: 120%;;
+    height:1px;
+    background-color:var(--mainColor);
+    border:0px solid;
+}
+/*end of portfolio section*/
