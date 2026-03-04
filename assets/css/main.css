@@ -8,7 +8,7 @@
 
 body{
   font-family:  var(--mainFont);
-  height: 5000px;
+  height: 1000px;
 }
 .bg-mainColor{
     background-color: var(--mainColor);
@@ -310,4 +310,5 @@ position:absolute;
     background-color:var(--mainColor);
     border:0px solid;
 }
+
 /*end of portfolio section*/
